@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="todo-app">
+    <h1>To-Do</h1>
+
+    <!-- フィルタ＆並び替えメニュー -->
+    <div class="filter-container">
+      <label for="filter">表示：</label>
+      <select id="filter">
+        <option value="all">すべて</option>
+        <option value="active">未完了</option>
+        <option value="completed">完了済み</option>
+      </select>
+
+      <button id="sort-toggle-btn">昇順</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <input type="text" id="new-task" placeholder="新しいタスクを入力" />
+    <input type="date" id="due-date">
+    <button id="add-task-btn">追加</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
